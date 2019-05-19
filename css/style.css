@@ -1,0 +1,87 @@
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+a, a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  font-size: 18px;
+}
+
+nav {
+  padding: 20px 0;
+}
+nav .logo {
+  width: 180px;
+}
+nav .logo img {
+  width: 100%;
+}
+nav .menu {
+  display: flex;
+  justify-content: flex-end;
+}
+nav .menu ul li {
+  display: inline-block;
+}
+nav .menu ul li a {
+  position: relative;
+  display: block;
+  padding: 20px;
+}
+
+header {
+  height: 100vh;
+  position: relative;
+  color: #fff;
+  text-align: center;
+}
+header .bg-slider {
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+}
+header .bg-slider div {
+  height: 100%;
+  width: 100%;
+  background: center center no-repeat;
+  background-size: cover;
+}
+header .bg-slider .slide-1 {
+  background-image: url(../img/header-bg-1.jpg);
+}
+header .bg-slider .slide-2 {
+  background-image: url(../img/header-bg-2.jpg);
+}
+header .filter {
+  position: absolute;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+header .container, header .row, header .filter, header .bg-slider {
+  height: 100%;
+}
+header .btn {
+  font-size: 1.7em;
+  border: 1px solid #fff;
+  border-radius: 50px;
+  display: inline-block;
+  margin-top: 100px;
+  left: 10px;
+  text-transform: uppercase;
+}
+header .btn a {
+  display: block;
+  padding: 10px 50px;
+}
+
+.slick-initialized .slick-slide {
+  outline: none;
+}
+
+/*# sourceMappingURL=style.css.map */
