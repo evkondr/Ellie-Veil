@@ -10,6 +10,7 @@ a, a:hover {
 }
 
 body {
+  font-family: "Playfair Display", serif;
   font-size: 18px;
 }
 
@@ -32,7 +33,21 @@ nav .menu ul li {
 nav .menu ul li a {
   position: relative;
   display: block;
-  padding: 20px;
+  padding: 10px 20px;
+}
+nav .menu ul li a:after {
+  content: "";
+  display: block;
+  height: 1px;
+  background: #6b2725;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  transition: all 0.2s ease-in-out;
+}
+nav .menu ul li a:hover:after {
+  width: 100%;
 }
 
 header {
@@ -49,7 +64,7 @@ header .bg-slider {
 header .bg-slider div {
   height: 100%;
   width: 100%;
-  background: center center no-repeat;
+  background: center 20% no-repeat;
   background-size: cover;
 }
 header .bg-slider .slide-1 {
@@ -74,10 +89,27 @@ header .btn {
   margin-top: 100px;
   left: 10px;
   text-transform: uppercase;
+  background: rgba(255, 255, 255, 0);
+  transition: all 0.2s ease-in-out;
+}
+header .btn:hover {
+  background: rgba(255, 255, 255, 0.3);
 }
 header .btn a {
   display: block;
   padding: 10px 50px;
+}
+header h1 {
+  font-weight: 100;
+  margin-bottom: 10px;
+  font-size: 2.7em;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 10px;
+}
+header h2 {
+  font-size: 1.7em;
+  font-weight: 100;
 }
 
 .slick-initialized .slick-slide {
