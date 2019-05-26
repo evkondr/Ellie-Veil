@@ -4,3 +4,9 @@ $('.bg-slider').slick({
     arrows: false,
     dots: false
 });
+
+$('.modelwrap__img').slick({
+    arrows: false,
+    dots: true
+});
+
