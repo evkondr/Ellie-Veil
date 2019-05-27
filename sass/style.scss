@@ -155,10 +155,21 @@ header{
         font-size: 1.7em;
         padding: 10px 20px;
         transition: all .3s ease-in-out;
+        outline: none;
         &:hover{
             color: #fff;
             background-color: #000;
         }
+    }
+    .more_content{
+        height: 0;
+        opacity: 0;
+        transition: all .5s ease-in-out .3s;
+        overflow: hidden;
+    }
+    .show{
+        height: auto;
+        opacity: 1;
     }
 }
 .slick-initialized .slick-slide {
