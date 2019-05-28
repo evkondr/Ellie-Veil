@@ -18,6 +18,17 @@ body {
   font-size: 14px;
 }
 
+.height {
+  height: 100%;
+}
+
+.filter {
+  position: absolute;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100%;
+}
+
 nav {
   padding: 20px 0;
 }
@@ -77,11 +88,6 @@ header .bg-slider .slide-1 {
 }
 header .bg-slider .slide-2 {
   background-image: url(../img/header-bg-2.jpg);
-}
-header .filter {
-  position: absolute;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
 }
 header .container, header .row, header .filter, header .bg-slider {
   height: 100%;
@@ -160,6 +166,25 @@ header h2 {
 .catalog .show {
   height: auto;
   opacity: 1;
+}
+
+.about {
+  position: relative;
+  color: #fff;
+  background: url(../img/header-bg.jpg);
+  background-size: cover;
+  min-height: 500px;
+  min-height: 500px;
+}
+.about h2 {
+  margin-top: 30px;
+  font-size: 1.9em;
+  z-index: 1000;
+}
+.about .about__text {
+  font-size: 1.1em;
+  line-height: 2em;
+  margin: 50px;
 }
 
 .slick-initialized .slick-slide {

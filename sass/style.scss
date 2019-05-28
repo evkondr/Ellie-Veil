@@ -18,6 +18,15 @@ body{
     font-family: $font;
     font-size: 14px;
 }
+.height{
+    height: 100%;
+}
+.filter{
+    position: absolute;
+    width: 100%;
+    background-color: rgba(0,0,0,.5);
+    height: 100%;
+}
 nav{
     padding: 20px 0;
     .logo{
@@ -84,11 +93,7 @@ header{
         }
         
     }
-    .filter{
-        position: absolute;
-        width: 100%;
-        background-color: rgba(0,0,0,.5);
-    }
+    
     .container, .row, .filter,.bg-slider{
             height: 100%; 
         }
@@ -170,6 +175,24 @@ header{
     .show{
         height: auto;
         opacity: 1;
+    }
+}
+.about{
+    position: relative;
+    color: #fff;
+    background: url(../img/header-bg.jpg);
+    background-size: cover;
+    min-height: 500px;
+    min-height: 500px;
+    h2{
+        margin-top: 30px;
+        font-size: 1.9em;
+        z-index: 1000;
+    }  
+    .about__text{
+        font-size: 1.1em;
+        line-height: 2em;
+        margin: 50px;
     }
 }
 .slick-initialized .slick-slide {
