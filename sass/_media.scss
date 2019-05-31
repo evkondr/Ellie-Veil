@@ -1,0 +1,12 @@
+@media (max-width: 992px) { 
+    nav{
+        .menu{
+           display: none;
+        }
+        .hamburger{
+            display: block;
+            align-items: flex-end;
+            float: right;
+        }
+    }
+}

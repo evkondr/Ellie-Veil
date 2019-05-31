@@ -10,6 +10,9 @@ $('.modelwrap__img').slick({
     dots: true
 });
 
+
+//Showing more dresses by clicking moreBtn
+
 let moreContent=document.querySelector(".more_content"),
     moreBtn=document.querySelector(".show_more");
 moreBtn.addEventListener("click", function(){
@@ -17,5 +20,16 @@ moreBtn.addEventListener("click", function(){
     (btnText=="показать еще")?moreBtn.textContent="Скрыть":moreBtn.textContent="Показать еще";
     moreContent.classList.toggle("show");
     console.log(btnText);
-})
+});
+
+//Hamburger button
+let ham=document.querySelector(".hamburger");
+
+ham.addEventListener("click", ()=>{
+    ham.classList.toggle("is-active");
+    
+});
+
+
+
                                        

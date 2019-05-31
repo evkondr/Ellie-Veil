@@ -14,9 +14,14 @@ a,a:hover{
     text-decoration: none;
     color: inherit;
 }
+html{
+    height: 100%;
+}
 body{
     font-family: $font;
     font-size: 14px;
+    height: 100%;
+    position: reфlative;
 }
 .height{
     height: 100%;
@@ -27,8 +32,25 @@ body{
     background-color: rgba(0,0,0,.5);
     height: 100%;
 }
+.side_menu{
+    display: flex;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    background: #fff;
+    z-index: 5000;
+    width: 30%;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3em;
+    li{
+        text-align: center;
+        padding: 10px 0;
+    }
+}
 nav{
-    padding: 20px 0;
+    padding: 20px 0 0px;
     .logo{
         width: 130px;
         img{
@@ -68,6 +90,27 @@ nav{
                 }
             }
         }   
+    }
+    .hamburger{
+        display: none;
+    }
+    .nav__contacts{
+        margin-top: 20px;
+        position: relative;
+        &:before{
+            content: "";
+            display: block;
+            background: rgba(0,0,0, .3);
+            background: radial-gradient(rgba(0,0,0, 1) 0%, transparent 70%);
+            width: 80%;
+            height: 1px;
+            position: absolute;
+        }
+    }
+    .fa{
+        font-size: 1.5em;
+        margin: 10px;
+        color: rgba(0,0,0, .8);
     }
 }
 header{
