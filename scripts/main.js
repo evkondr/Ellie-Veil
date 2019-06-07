@@ -23,11 +23,11 @@ moreBtn.addEventListener("click", function(){
 });
 
 //Hamburger button
-let ham=document.querySelector(".hamburger");
+let ham=document.querySelector(".hamburger"), sideMenu=document.querySelector(".side_menu");
 
 ham.addEventListener("click", ()=>{
     ham.classList.toggle("is-active");
-    
+    sideMenu.classList.toggle("active");
 });
 
 

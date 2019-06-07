@@ -10,3 +10,38 @@
         }
     }
 }
+@media (max-width: 768px){
+    .side_menu{
+        width: 70%;
+        left: -70%;
+    }
+    .modelwrap{
+        margin-top: 20px;
+    }
+}
+@media (max-width: 576px){
+    header{
+        h1{
+            font-size: 2.5em;
+        }
+        h2{
+            font-size: 1.5em;
+        }
+    }
+    .section__header{
+        h3{
+            font-size: 0.7em;
+        }
+    }
+    .about{
+        background-position: center;
+    }
+    footer{
+        text-align: center;
+        .footer__icons{
+            text-align: center;
+        }
+        
+    }
+    
+}
