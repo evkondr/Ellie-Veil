@@ -28,7 +28,16 @@ let ham=document.querySelector(".hamburger"), sideMenu=document.querySelector(".
 ham.addEventListener("click", ()=>{
     ham.classList.toggle("is-active");
     sideMenu.classList.toggle("active");
+    document.body.classList.toggle("noscroll");
 });
+sideMenu.addEventListener("click", function(e){
+if(e.target.className=="side_menu active"){
+    sideMenu.classList.remove("active");
+    ham.classList.remove("is-active");
+    document.body.classList.remove("noscroll");
+}
+    
+})
 
 
 

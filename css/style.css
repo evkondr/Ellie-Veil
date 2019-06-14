@@ -25,6 +25,10 @@ body {
   color: #2b2b2b;
 }
 
+.noscroll {
+  overflow: hidden;
+}
+
 .height {
   height: 100%;
 }
@@ -38,7 +42,7 @@ body {
 
 .side_menu {
   display: flex;
-  height: 100%;
+  flex-direction: column;
   position: absolute;
   top: 0;
   bottom: 0;
@@ -51,6 +55,19 @@ body {
   font-size: 1.3em;
   overflow: hidden;
   transition: all 0.3s ease-in-out;
+}
+.side_menu .icons {
+  display: none;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  text-align: center;
+  font-size: 1.3em;
+  margin: 10px 0;
+}
+.side_menu .icons div {
+  display: inline;
+  margin-right: 5px;
 }
 .side_menu li {
   text-align: center;
@@ -247,6 +264,9 @@ header h2 {
   width: 100%;
   height: 400px;
 }
+.map .fa {
+  margin-right: 5px;
+}
 
 footer {
   padding: 30px;
@@ -256,7 +276,10 @@ footer {
 footer .footer__icons {
   text-align: right;
 }
-footer .fa {
+footer p .fa {
+  margin-right: 5px;
+}
+footer .footer__icons {
   font-size: 2.5em;
 }
 
@@ -270,7 +293,6 @@ footer .fa {
   }
   nav .hamburger {
     display: block;
-    align-items: flex-end;
     float: right;
   }
 }
@@ -285,6 +307,10 @@ footer .fa {
   }
 }
 @media (max-width: 576px) {
+  .side_menu .icons {
+    display: block;
+  }
+
   header h1 {
     font-size: 2.5em;
   }
@@ -292,8 +318,25 @@ footer .fa {
     font-size: 1.5em;
   }
 
+  nav .logo {
+    margin: 0 auto;
+  }
+  nav .hamburger {
+    float: none;
+    text-align: center;
+  }
+  nav .nav__contacts {
+    margin: 0;
+    display: none;
+  }
+
+  .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+    width: 35px;
+  }
+
   .section__header h3 {
     font-size: 0.7em;
+    padding: 0 5px;
   }
 
   .about {
