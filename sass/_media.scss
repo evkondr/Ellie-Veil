@@ -23,6 +23,12 @@
         .icons{
             display: block;
         }
+        p{
+            font-size: 0.5em;
+        }
+        .fa{
+            margin-right: 10px;
+        }
     }
     header{
         h1{
@@ -33,6 +39,7 @@
         }
     }
     nav{
+        padding-bottom: 0px;
         .logo{
             margin: 0 auto;
         }

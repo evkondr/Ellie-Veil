@@ -1,5 +1,5 @@
 
-$font: 'Playfair Display', serif;//'Playfair Display', serif;'Franklin Gothic Medium'
+$font: 'Playfair Display', serif;
 $font-color: #2b2b2b;
 $first-color: #6b2725;
 
@@ -75,9 +75,9 @@ body{
     left: 0; 
 }
 nav{
-    padding: 20px 0 0px;
+    padding: 10px 0 20px;
     .logo{
-        width: 130px;
+        width: 180px;
         img{
             width: 100%;
         }
@@ -118,23 +118,19 @@ nav{
     .hamburger{
         display: none;
     }
-    .nav__contacts{
-        margin-top: 20px;
-        position: relative;
-        &:before{
-            content: "";
-            display: block;
-            background: $font-color;
-            background: radial-gradient($font-color 0%, transparent 70%);//radial-gradient(rgba(0,0,0, .3) 0%, transparent 70%);
-            width: 90%;
-            height: 1px;
-            position: absolute;
-        }
+
+    .fa{
+        font-size: 1.3em;
+        margin-right: 10px;
+        color: $font-color;
+    }
+}
+.nav__contacts{
+    p{
+        margin-bottom: 0;
     }
     .fa{
-        font-size: 1.5em;
-        margin: 10px;
-        color: $font-color;
+        vertical-align: middle;
     }
 }
 header{

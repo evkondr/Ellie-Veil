@@ -79,10 +79,10 @@ body {
 }
 
 nav {
-  padding: 20px 0 0px;
+  padding: 10px 0 20px;
 }
 nav .logo {
-  width: 130px;
+  width: 180px;
 }
 nav .logo img {
   width: 100%;
@@ -117,23 +117,17 @@ nav .menu ul a:hover:after {
 nav .hamburger {
   display: none;
 }
-nav .nav__contacts {
-  margin-top: 20px;
-  position: relative;
-}
-nav .nav__contacts:before {
-  content: "";
-  display: block;
-  background: #2b2b2b;
-  background: radial-gradient(#2b2b2b 0%, transparent 70%);
-  width: 90%;
-  height: 1px;
-  position: absolute;
-}
 nav .fa {
-  font-size: 1.5em;
-  margin: 10px;
+  font-size: 1.3em;
+  margin-right: 10px;
   color: #2b2b2b;
+}
+
+.nav__contacts p {
+  margin-bottom: 0;
+}
+.nav__contacts .fa {
+  vertical-align: middle;
 }
 
 header {
@@ -310,6 +304,12 @@ footer .footer__icons {
   .side_menu .icons {
     display: block;
   }
+  .side_menu p {
+    font-size: 0.5em;
+  }
+  .side_menu .fa {
+    margin-right: 10px;
+  }
 
   header h1 {
     font-size: 2.5em;
@@ -318,6 +318,9 @@ footer .footer__icons {
     font-size: 1.5em;
   }
 
+  nav {
+    padding-bottom: 0px;
+  }
   nav .logo {
     margin: 0 auto;
   }
