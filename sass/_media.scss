@@ -73,3 +73,30 @@
     }
     
 }
+@media (max-height: 500px){
+    .side_menu{
+        
+        top: -150px;
+        left: 0;
+        width: 100%;
+        .icons{
+            position: static;
+        }
+        ul{
+            margin-bottom: 30px;
+        }
+        li{
+            display: inline-block;
+            border-right: 1px solid $font-color;
+            padding: 0 15px;
+        }
+        li:last-child{
+            border-right: none;
+    
+        }
+        bottom: auto;
+    }
+    .side_menu.active{
+        top: 0px;
+    }
+}

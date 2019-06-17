@@ -37,7 +37,7 @@ if(e.target.className=="side_menu active"){
     document.body.classList.remove("noscroll");
 }
     
-})
+});
 
 
 
