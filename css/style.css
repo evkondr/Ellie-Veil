@@ -79,18 +79,20 @@ body {
 }
 
 nav {
-  padding: 10px 0 20px;
+  padding: 20px 0 10px;
 }
 nav .logo {
-  width: 180px;
+  width: 250px;
+  margin: 0 auto;
 }
 nav .logo img {
   width: 100%;
 }
 nav .menu {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   font-size: 1.3em;
+  margin: 20px 0;
 }
 nav .menu ul li {
   display: inline-block;
@@ -103,7 +105,7 @@ nav .menu ul a {
 nav .menu ul a:after {
   content: "";
   display: block;
-  height: 1px;
+  height: 2px;
   background: #6b2725;
   position: absolute;
   bottom: 0;
@@ -129,9 +131,13 @@ nav .fa {
 .nav__contacts .fa {
   vertical-align: middle;
 }
+.nav__contacts a i::nth-child(2) {
+  text-decoration: underline;
+}
 
 header {
-  height: 100vh;
+  padding: 20px 0;
+  height: 700px;
   position: relative;
   color: #fff;
   text-align: center;

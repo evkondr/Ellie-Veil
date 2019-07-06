@@ -36,8 +36,22 @@ if(e.target.className=="side_menu active"){
     ham.classList.remove("is-active");
     document.body.classList.remove("noscroll");
 }
-    
+   
+
 });
+$(document).ready(function() {
+   $('a[href^="#"]').click(function () { 
+     elementClick = $(this).attr("href");
+     destination = $(elementClick).offset().top;
+       $('html').animate( { scrollTop: destination }, 1100 );
+     if($.browser.safari){
+       $('body').animate( { scrollTop: destination }, 1100 );
+     }else{
+       $('html').animate( { scrollTop: destination }, 1100 );
+     }
+     return false;
+   });
+ });
 
 
 
