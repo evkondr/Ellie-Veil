@@ -40,6 +40,14 @@ if(e.target.className=="side_menu active"){
 
 });
 $(document).ready(function() {
+    
+    setTimeout(function(){
+        let preloader=document.querySelector(".preloader");
+        if(!preloader.classList.contains("done")){
+            preloader.classList.add("done");
+        }
+    }, 1000)
+    
    $('a[href^="#"]').click(function () { 
      elementClick = $(this).attr("href");
      destination = $(elementClick).offset().top;
