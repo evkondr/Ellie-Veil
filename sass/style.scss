@@ -122,9 +122,10 @@ nav{
     }
     .menu{
         display: flex;
-        justify-content: center;
+        align-items: center;
         font-size: 1.3em;
-        margin: 20px 0;
+        height: 100%;
+        
         ul{
             
             li{
@@ -163,20 +164,25 @@ nav{
         margin-right: 10px;
         color: $font-color;
     }
-}
-.nav__contacts{
-    p{
-        margin-bottom: 0;
-    }
-    .fa{
-        vertical-align: middle;
-    }
-    a{
-        i::nth-child(2){
-            text-decoration: underline;
+    .contacts{
+        display: flex;
+        height: 100%;
+        align-items: center;
+        justify-content: flex-end;
+        p{
+            margin-bottom: 0;
+        }
+        .fa{
+            vertical-align: middle;
+        }
+        a{
+            i::nth-child(2){
+                text-decoration: underline;
+            }
         }
     }
 }
+
 header{
     padding: 20px 0;
     height: 700px;
